@@ -34,7 +34,7 @@ app.use("/api/jobs", jobRoutes);
 app.use("/api/health", healthRoutes);
 
 app.get("/", (_req, res) => {
-  const { version } = require("../../package.json");
+  const { version } = require("../package.json");
 
   res.send(`<!DOCTYPE html>
 <html lang="en">
