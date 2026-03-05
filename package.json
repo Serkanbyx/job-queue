@@ -17,6 +17,10 @@
     "typescript",
     "express"
   ],
+  "author": {
+    "name": "Serkanby",
+    "url": "https://serkanbayraktar.com/"
+  },
   "license": "MIT",
   "dependencies": {
     "@bull-board/api": "^6.5.0",

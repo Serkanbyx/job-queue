@@ -307,17 +307,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Developer
 
-**Serkan Bayraktar**
+**Serkanby**
 
-- [Website](https://serkanbayraktar.com/)
-- [GitHub](https://github.com/Serkanbyx)
-- [Email](mailto:serkanbyx1@gmail.com)
+- Website: [serkanbayraktar.com](https://serkanbayraktar.com/)
+- GitHub: [@Serkanbyx](https://github.com/Serkanbyx)
+- Email: [serkanbyx1@gmail.com](mailto:serkanbyx1@gmail.com)
 
 ## Contact
 
 - [Open an Issue](https://github.com/Serkanbyx/s3.15_Job-Queue/issues)
-- [Email](mailto:serkanbyx1@gmail.com)
-- [Website](https://serkanbayraktar.com/)
+- Email: [serkanbyx1@gmail.com](mailto:serkanbyx1@gmail.com)
+- Website: [serkanbayraktar.com](https://serkanbayraktar.com/)
 
 ---
 
