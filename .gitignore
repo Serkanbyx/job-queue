@@ -1,10 +1,33 @@
 node_modules/
 dist/
 reports/
+
+# Environment files
 .env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+
+# Logs
 *.log
+npm-debug.log*
+
+# OS files
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# IDE
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# Test
 coverage/
+
+# Misc
+*.tgz
+.npm
+.cache
