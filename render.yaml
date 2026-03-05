@@ -12,20 +12,11 @@ services:
       - key: PORT
         value: 3000
       - key: REDIS_HOST
-        fromService:
-          type: redis
-          name: job-queue-redis
-          property: host
+        sync: false
       - key: REDIS_PORT
-        fromService:
-          type: redis
-          name: job-queue-redis
-          property: port
+        value: "6379"
       - key: REDIS_PASSWORD
-        fromService:
-          type: redis
-          name: job-queue-redis
-          property: password
+        sync: false
       - key: REDIS_TLS
         value: "true"
       - key: CORS_ORIGINS
@@ -34,8 +25,3 @@ services:
         generateValue: true
       - key: BULL_BOARD_PASSWORD
         generateValue: true
-
-  - type: redis
-    name: job-queue-redis
-    plan: free
-    ipAllowList: []
