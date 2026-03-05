@@ -1,0 +1,57 @@
+{
+  "name": "bullmq-job-queue-api",
+  "version": "1.0.0",
+  "description": "Production-ready Job Queue REST API using BullMQ + Redis with email sending and report generation workers",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src/**/*.ts"
+  },
+  "keywords": [
+    "bullmq",
+    "redis",
+    "job-queue",
+    "background-jobs",
+    "typescript",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@bull-board/api": "^6.5.0",
+    "@bull-board/express": "^6.5.0",
+    "bullmq": "^5.34.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^4.21.0",
+    "express-basic-auth": "^1.2.1",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^8.0.0",
+    "hpp": "^0.2.3",
+    "ioredis": "^5.4.1",
+    "json2csv": "^6.0.0-alpha.2",
+    "nodemailer": "^6.9.14",
+    "pdfkit": "^0.15.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "winston": "^3.14.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/hpp": "^0.2.6",
+    "@types/json2csv": "^5.0.7",
+    "@types/node": "^22.5.0",
+    "@types/nodemailer": "^6.4.15",
+    "@types/pdfkit": "^0.13.4",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.6",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

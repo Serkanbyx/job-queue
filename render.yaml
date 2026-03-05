@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: bullmq-job-queue-api
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: REDIS_HOST
+        fromService:
+          type: redis
+          name: job-queue-redis
+          property: host
+      - key: REDIS_PORT
+        fromService:
+          type: redis
+          name: job-queue-redis
+          property: port
+      - key: REDIS_PASSWORD
+        fromService:
+          type: redis
+          name: job-queue-redis
+          property: password
+      - key: REDIS_TLS
+        value: "true"
+      - key: CORS_ORIGINS
+        value: https://your-frontend-domain.com
+      - key: BULL_BOARD_USER
+        generateValue: true
+      - key: BULL_BOARD_PASSWORD
+        generateValue: true
+
+  - type: redis
+    name: job-queue-redis
+    plan: free
+    ipAllowList: []
